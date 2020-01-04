@@ -18,4 +18,4 @@ else
 fi
 
 echo "[info] Starting Minecraft bedrock process..."
-cd "/config/minecraft" && ./bedrock_server
+cd "/config/minecraft" && sh run.sh
