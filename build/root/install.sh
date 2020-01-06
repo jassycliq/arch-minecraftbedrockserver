@@ -54,6 +54,7 @@ mkdir -p "/srv/minecraft/mods"
 mv "/tmp/bdlauncher-master/out/" "/srv/minecraft/mods"
 mv "/tmp/bdlauncher-master/mod.list" "/srv/minecraft/mods"
 mv "/tmp/bdlauncher-master/config" "/srv/minecraft/config"
+mv "/tmp/bdlauncher-master/run.sh" "/srv/minecraft/run.sh"
 
 # container perms
 ####
