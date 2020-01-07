@@ -51,7 +51,7 @@ curly.sh -rc 6 -rw 10 -of "/tmp/minecraftbedrockserver.zip" -url "${minecraft_be
 # unzip minecraft bedrock server
 mkdir -p "/srv/minecraft" && unzip "/tmp/minecraftbedrockserver.zip" -d "/srv/minecraft"
 mkdir -p "/srv/minecraft/mods"
-mv "/tmp/bdlauncher-master/out/" "/srv/minecraft/mods"
+mv /tmp/bdlauncher-master/out/* "/srv/minecraft/mods/"
 mv "/tmp/bdlauncher-master/mod.list" "/srv/minecraft/mods"
 mv "/tmp/bdlauncher-master/config" "/srv/minecraft/config"
 mv "/tmp/bdlauncher-master/run.sh" "/srv/minecraft/run.sh"
