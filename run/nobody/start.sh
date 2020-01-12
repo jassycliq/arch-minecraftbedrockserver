@@ -18,4 +18,4 @@ else
 fi
 
 echo "[info] Starting Minecraft bedrock process..."
-cd "/config/minecraft" && screen -S Minecraft -L -Logfile /config/minecraft/masterLog.0 -d -m ./bdlauncher
+cd "/config/minecraft" && ./bdlauncher
