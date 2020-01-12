@@ -8,7 +8,7 @@ set -e
 
 # download build scripts from github
 curl --connect-timeout 5 --max-time 600 --retry 5 --retry-delay 0 --retry-max-time 60 -o /tmp/scripts-master.zip -L https://github.com/binhex/scripts/archive/master.zip
-curl --connect-timeout 5 --max-time 600 --retry 5 --retry-delay 0 --retry-max-time 60 -o /tmp/bdlauncher-master.zip -L https://github.com/jassycliq/bdlauncher/archive/master.zip
+curl --connect-timeout 5 --max-time 600 --retry 5 --retry-delay 0 --retry-max-time 60 -o /tmp/bdlauncher-master.zip -L https://github.com/jassycliq/bdlauncher/releases/latest/download/bdlauncher.zip
 
 # unzip build scripts
 unzip /tmp/scripts-master.zip -d /tmp
@@ -52,10 +52,10 @@ curly.sh -rc 6 -rw 10 -of "/tmp/minecraftbedrockserver.zip" -url "${minecraft_be
 # unzip minecraft bedrock server
 mkdir -p "/srv/minecraft" && unzip "/tmp/minecraftbedrockserver.zip" -d "/srv/minecraft"
 mkdir -p "/srv/minecraft/mods"
-mv /tmp/bdlauncher-master/out/* "/srv/minecraft/mods/"
-mv "/tmp/bdlauncher-master/mod.list" "/srv/minecraft/mods"
+mv /tmp/bdlauncher-master/mods/* "/srv/minecraft/mods/"
 mv "/tmp/bdlauncher-master/config" "/srv/minecraft/config"
-mv "/tmp/bdlauncher-master/run.sh" "/srv/minecraft/run.sh"
+mv "/tmp/bdlauncher-master/bdlauncher" "/srv/minecraft/bdlauncher"
+mv "/tmp/bdlauncher-master/preload.so" "/srv/minecraft/preload.so"
 
 # container perms
 ####
