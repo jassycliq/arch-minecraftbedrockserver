@@ -52,10 +52,10 @@ curly.sh -rc 6 -rw 10 -of "/tmp/minecraftbedrockserver.zip" -url "${minecraft_be
 # unzip minecraft bedrock server
 mkdir -p "/srv/minecraft" && unzip "/tmp/minecraftbedrockserver.zip" -d "/srv/minecraft"
 mkdir -p "/srv/minecraft/mods"
-mv /tmp/bdlauncher-master/mods/* "/srv/minecraft/mods/"
-mv "/tmp/bdlauncher-master/config" "/srv/minecraft/config"
-mv "/tmp/bdlauncher-master/bdlauncher" "/srv/minecraft/bdlauncher"
-mv "/tmp/bdlauncher-master/preload.so" "/srv/minecraft/preload.so"
+mv /tmp/dist-RELEASE-EN/mods/* "/srv/minecraft/mods/"
+mv "/tmp/dist-RELEASE-EN/config" "/srv/minecraft/config"
+mv "/tmp/dist-RELEASE-EN/bdlauncher" "/srv/minecraft/bdlauncher"
+mv "/tmp/dist-RELEASE-EN/preload.so" "/srv/minecraft/preload.so"
 
 # container perms
 ####
