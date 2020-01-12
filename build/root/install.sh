@@ -20,7 +20,7 @@ mv /tmp/scripts-master/shell/arch/docker/*.sh /usr/local/bin/
 ####
 
 # define pacman packages
-pacman_packages="rsync"
+pacman_packages="rsync screen"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
